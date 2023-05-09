@@ -1,4 +1,4 @@
-export HIVE_HOME=/home/hadoop/hive
+export HIVE_HOME=/home/hadoop/apache-hive
 export PATH=$PATH:$HIVE_HOME/bin
 
 export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:.
