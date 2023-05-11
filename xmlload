@@ -1,0 +1,4 @@
+CREATE TABLE xml_dummy (col1 STRING);
+LOAD DATA LOCAL INPATH '/home/nineleaps/xmldata' INTO TABLE xml_dummy;
+CREATE TABLE employees(id STRING, name STRING, age STRING, salary STRING);
+INSERT INTO employees SELECT XPATH_STRING(col1, 'rec/id'), XPATH_STRING(col1, 'rec/name'), XPATH_STRING(col1, 'rec/age'), XPATH_STRING(col1, 'rec/salary') FROM xml_dummy;
