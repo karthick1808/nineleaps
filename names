@@ -1,0 +1,5 @@
+CREATE TABLE person AS SELECT
+   REGEXP_EXTRACT(name, '^(\\S+)') AS first_name,
+   REGEXP_EXTRACT(name, '(\\S+)$') AS last_name
+FROM
+   student;
