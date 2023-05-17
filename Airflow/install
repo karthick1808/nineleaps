@@ -4,7 +4,8 @@ mkdir ./dags ./logs ./plugins
 # Ubuntu / Mac OSX
 touch .env
 echo -e "AIRFLOW_UID=$(id -u)" > .env
-
+cat .env
+nano .env
 AIRFLOW_UID=50000
 
 docker-compose up airflow-init
