@@ -1,0 +1,8 @@
+<property>
+  <name>sqoop.hive.import</name>
+  <value>true</value>
+</property>
+<property>
+  <name>sqoop.hive.import.version</name>
+  <value>2.3.9</value>
+</property>
