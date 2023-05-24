@@ -1,0 +1,13 @@
+[Unit]
+Description=Hadoop Start All Service
+After=network.target
+
+[Service]
+User=hadoop-user
+Group=hadoop-group
+ExecStart=/path/to/hadoop/start-all.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
