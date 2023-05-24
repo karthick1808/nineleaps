@@ -1,15 +1,18 @@
 [Unit]
-Description=Hadoop Start All
+Description=Hadoop Service
 After=network.target
 
 [Service]
 User=hadoop
 Group=hadoop
+Type=forking
+Restart=on-failure
+RestartSec=5s
+KillMode=process
+
 ExecStart=/opt/hadoop/sbin/start-all.sh
 ExecStop=/opt/hadoop/sbin/stop-all.sh
-ExecReload=/opt/hadoop/sbin/stop-all.sh && /opt/hadoop/sbin/start-all.sh
-Restart=always
-RestartSec=10s
+ExecReload=/opt/hadoop/sbin/start-all.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
