@@ -8,9 +8,9 @@
 </property>
 <property>
   <name>javax.jdo.option.ConnectionUserName</name>
-  <value>your_mysql_username</value>
+  <value>root</value>
 </property>
 <property>
   <name>javax.jdo.option.ConnectionPassword</name>
-  <value>your_mysql_password</value>
+  <value>Welcome!123</value>
 </property>
