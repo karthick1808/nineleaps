@@ -16,8 +16,36 @@
 
 <!-- Put site-specific property overrides in this file. -->
 <configuration>
-    <property>
-        <name>dfs.replication</name>
-        <value>1</value>
-    </property>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/path/to/namenode/directory</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>/path/to/datanode/directory</value>
+  </property>
+  <property>
+    <name>dfs.blocksize</name>
+    <value>134217728</value>
+  </property>
+  <property>
+    <name>dfs.namenode.handler.count</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>dfs.datanode.handler.count</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>dfs.datanode.max.transfer.threads</name>
+    <value>4096</value>
+  </property>
+  <property>
+    <name>dfs.permissions.enabled</name>
+    <value>true</value>
+  </property>
 </configuration>
