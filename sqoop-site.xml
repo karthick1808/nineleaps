@@ -6,3 +6,8 @@
   <name>sqoop.hive.import.version</name>
   <value>2.3.9</value>
 </property>
+<property>
+  <name>sqoop.metastore.client.autoconnect.driver</name>
+  <value>com.mysql.jdbc.Driver</value>
+</property>
+
